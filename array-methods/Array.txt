@@ -1,0 +1,37 @@
+Méthodes d'opérations sur les tableaux (37)
+*******************************************
+
+Array.isArray(val/tableau)          [boolean]   Permet de déterminer si l'objet passé en argument est un objet Array.
+Array.of(val)                       [newTab]    permet de créer une nouvelle instance d'objet Array à partir d'un nombre variable d'arguments (quels que soient leur nombre ou leur type).
+Array.from(val/tableau,{function})  [newTab]    Permet de créer une nouvelle instance d'Array à partir d'un objet itérable ou semblable à un autre tableau.
+
+.length                             [entier]    Donne le nombre d'éléments contenus dans un tableau.
+.at(entier)                         [value]     Renvoie l'élement du tableau à l'indice (entier) donné en argument. 
+.concat(val/tableau)                [newTab]    Permet de fusionner deux ou plusieurs tableaux en les concaténant.
+.copyWithin(cible,début,{fin})      [thisTab]   Copie sur l'index selectionné (cible) les valeurs de l'index (début) et toutes les suivantes sans répétitions { jusqu'à l'index (fin) }.
+.entries()                          [newTab]    Renvoie un nouvel objet (Array Iterator) contenant les [clef,valeur] pour chaque éléments du tableau.
+.every(function)                    [boolean]   Teste si TOUT les élements du tableau vérifient une condition.
+.fill(val,cibleDébut,{cibleFin})    [thisTab]   Remplit tous les éléments d'un tableau entre l'index (cibleDébut) et la fin {cibleFin}) avec une valeur statique répétée (val).
+.filter(function)                   [newTab]    Renvoie TOUT les éléments qui remplissent une fonction donnée en argument.
+.find(function)                     [value]     Renvoie la valeur du premier élément trouvé qui respecte la condition donnée en argument. (sinon undefined)
+.findIndex(function)                [entier]    Renvoie l'indice du premier élement du tableau qui respecte la condition donnée en argument. (sinon -1)
+.flat(entier)                       [newTab]    Créer un nouveau tableau contenant les éléments des sous-tableaux du premier tableau avec la profondeur de récursivité en argument et permet également de retirer les « trous » d'un tableau.
+.flatMap(function)                  [newTab]    Permet d'appliquer une fonction à chaque élément du tableau puis d'aplatir le résultat en un nouveau tableau.
+.forEach(function)                  [undefined] Permet d'exécuter une fonction donnée sur chaque élément du tableau.
+.includes(val)                      [boolean]   Permet de déterminer si un tableau contient une valeur passée en argument.
+.indexOf(val)                       [value]     Renvoie le premier indice pour lequel on trouve un élément donné dans un tableau. (sinon -1)
+.join(val)                          [newStr]    Crée et renvoie une nouvelle chaîne de caractères en concaténant tous les éléments d'un tableau avec la valeur fournie en argument. (sinon ",")
+.keys(tab)                          [newObj]    Renvoie un nouvel objet (Array Iterator) qui contient les clefs pour chaque indice du tableau.
+.lastIndexOf(val)                   [value]     Permet de renvoyer le dernier indice pour lequel une valeur donnée est présente dans un tableau. (sinon -1)
+.map(function)                      [newTab]    Crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+.pop()                              [element]   Supprime le dernier élément d'un tableau et retourne cet [élément].[undefined] si tableau vide.
+.push(val)                          [tabSize]   Ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
+.reduce(function)                   [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la gauche vers la droite) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
+.reduceRight(function)              [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la droite vers la gauche) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
+.reverse(tab)                       [thisTab]   Inverse les éléments d'un tableau (premier au dernier et vice-versa).
+.shift()                            [element]   Retire le premier élément d'un tableau et renvoye cet élément en modifiant la longeur du tableau.
+.slice(indexStart,{indexEnd})       [element]   Découpe un tableau sur base d' un index de début (jusqu'à la fin) ou/et d'un index de fin {indexEnd}.
+.some(function)                     [boolean]   Teste si au moins un élément du tableau répond au conditions de la fonction fournie.
+.sort({function})                   [thisTab]   Trie les éléments d'un tableau dans l'ordre croissant ou selon une fonction passée en argument.
+.splice(index,nbElem,val)           [value]     Modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de nouveaux éléments.
+.toLocaleString(locales,{options})  [newStr]    Renvoie une chaîne de caractères qui représente les éléments du tableau.

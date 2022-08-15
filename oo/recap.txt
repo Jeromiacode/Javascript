@@ -1,0 +1,24 @@
+La programation Orientée Objet
+
+La programation orienté object est basée sur 4 principes:
+-  Encapsulation
+-  Abstraction
+-  Inheritance
+-  Polymorphism
+
+    L'encapsulation:
+Est le fait de regrouper les méthodes (fonctions) et propriétés (variables) au sein d'un object.
+Les meilleures fonctions sont celles avec le moins de paramètres (function (paramètres) {}).
+Réduit la complexité et améliore la réutilisabilité.
+
+    L'abstraction:
+Est le fait de cacher les prorpiétés et méthodes à la vue externe du programme.
+Cela permet de simplifier l'interface et de réduire l'impact des futurs changements.
+Réduit la complexité et isole le code pour limiter l'impact des futurs changements.
+
+    L'héritage:
+Est le fait de limiter les lignes de codes redondantes.
+Elimine et évite la répétition de code.
+
+    Le polylorhpisme:
+Est une technique qui permet de reduire les conditions (if else) au sein du programme.
